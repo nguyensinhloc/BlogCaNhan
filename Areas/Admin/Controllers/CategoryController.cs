@@ -11,6 +11,7 @@ using Microsoft.AspNetCore.Authorization;
 namespace BlogCaNhan.Controllers
 {
     [Area("Admin")]
+    [Authorize]
     public class CategoryController : Controller
     {
         private readonly BlogDbContext _context;

@@ -68,7 +68,7 @@ namespace BlogCaNhan.Controllers
                         );
                     if (result.Succeeded)
                     {
-                        return RedirectToAction(login.ReturnUrl ?? "/");
+                        return RedirectToAction("Index", "Blog", new {area = "Admin"});
                     }
                     ModelState.AddModelError("", "Đăng nhập thất bại");
                 }

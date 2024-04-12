@@ -11,6 +11,7 @@ using Microsoft.AspNetCore.Authorization;
 namespace BlogCaNhan.Controllers
 {
     [Area("Admin")]
+    [Authorize]
     public class BlogController : Controller
     {
         [BindProperty]
